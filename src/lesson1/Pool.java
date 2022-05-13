@@ -16,7 +16,7 @@ public class Pool {
         this.length = length;
     }
 
-    public double getTimeToSwim(CanSwim animals){
-        return animals.swim(this);
+    public double getTimeToSwim(CanSwim swimmer){
+        return swimmer.swim(this);
     }
 }
