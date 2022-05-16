@@ -13,10 +13,12 @@ public class Pool {
     }
 
     public Pool(int length) {
+
         this.length = length;
     }
 
-    public double getTimeToSwim(CanSwim swimmer){
-        return swimmer.swim(this);
+    public double getTimeToSwim(CanSwim animals){
+
+        return animals.swim(this);
     }
 }

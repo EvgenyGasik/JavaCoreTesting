@@ -4,6 +4,17 @@ public class Turtle extends Animals implements CanSwim{
 
     private int swimmingSpeed;
 
+    public int getJumpLimit() {
+        return jumpLimit;
+    }
+
+    public void setJumpLimit(int jumpLimit) {
+        this.jumpLimit = jumpLimit;
+    }
+
+    private int jumpLimit;
+
+
     public int getSwimmingSpeed() {
         return swimmingSpeed;
     }
@@ -20,10 +31,10 @@ public class Turtle extends Animals implements CanSwim{
         System.out.println("Turtle make may");
     }
 
-    public double swim(Pool pool){
+    public int swim(Pool pool){
         System.out.println(" I can swim - Turtle");
 
-        double timeToSwim = pool.getLength()/swimmingSpeed;
+        int timeToSwim = pool.getLength()/swimmingSpeed;
         return timeToSwim;
 
     }
