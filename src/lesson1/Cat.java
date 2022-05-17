@@ -6,8 +6,8 @@ public class Cat extends Animals implements CanSwim, Jumpable {
     private int swimmingSpeed;
     private int jumpLimit;
 
-    public Cat(String name, String color, int age, int swimmingSpeed, int jumpLimit) {
-        super(name, color, age);
+    public Cat(String name, int swimmingSpeed, int jumpLimit) {
+        super(name);
         this.swimmingSpeed = swimmingSpeed;
         this.jumpLimit = jumpLimit;
     }
@@ -49,7 +49,7 @@ public class Cat extends Animals implements CanSwim, Jumpable {
             System.out.println("I cant jump");
         }
         else {
-            System.out.println(" I can jump this " + jump.getHeight() + " height");
+            System.out.println(" I can jump this height - " + jump.getHeight());
         }
     }
 }
